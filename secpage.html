@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/secpage.css">
+    <body>
+        <div class="page1">
+        <header>
+            <nav class="navbar">
+                  <div class="container">
+                    <img src="https://elmawkaa.com/assets/img/logo.png">
+                    <a href="#home" style="color: darkmagenta;">الرئيسية</a>
+                    <a href="#home">أفضل العروض</a>
+                    <a href="#home">كيف يعمل </a>
+                    <a href="#home">سجل معنا كمورد</a>
+                    <a href="#home">حمل التطبيق</a>
+                    <a href="#home">اتصل بنا</a>
+                    <a href="#home">English</a>
+                  </div> 
+             </nav>
+        </header>
+       <div class="tit">
+          <h3>طلب توريد خرسانة جاهزة</h3> 
+            </div> 
+
+<form id="regForm" action="">
+
+
+<!-- One "tab" for each step in the form: -->
+    <div class="tab">الكمية بالمتر المكعب *
+        <label for="quantity"></label>
+  <p><input type="number" id="quantity" name="quantity" oninput="this.className = ''">
+        </p>
+    المحتوى الأسمنتي كجم/م3 *
+  <p><input list="cemcons" name="cemcon"  oninput="this.className = ''">
+         <datalist id="cemcons">
+    <option value="250">
+    <option value="300">
+    <option value="315">
+    <option value="350">
+    <option value="400">
+    <option value="450">
+    <option value="480">
+  </datalist>
+        </p>
+         الإجهاد المطلوب بعد 28 يوم ب كجم/سم2*
+  <p><input list="Pressure" name="Pre"  oninput="this.className = ''">
+         <datalist id="Pressure">
+    <option value="180">
+    <option value="200">
+    <option value="255">
+    <option value="300">
+    <option value="350">
+    <option value="400">
+  </datalist>
+        </p>
+          أسمنت عادى ولا مقاوم *
+  <p><input list="Cement" name="Cem"  oninput="this.className = ''">
+         <datalist id="Cement">
+    <option value="عادي">
+    <option value="مقاومة"></datalist></p>
+         ايه طول ذراع المضخة بالمتر؟ *
+<p><input list="Pumb" name="pm"  oninput="this.className = ''">
+         <datalist id="Pumb">
+    <option value="36">
+    <option value="42">
+    <option value="47">
+    <option value="49">
+    <option value="52">
+    <option value="55">
+    <option value="55<">
+    <option value="غير مطلوب">
+  </datalist>
+        </p>    
+    </div>
+
+
+<div class="tab">
+    مكان المشروع*
+  <p><input  oninput="this.className = ''"></p>
+    عنوان المشروع
+  <p><input  oninput="this.className = ''"></p>
+        مرحلة المشروع*
+  <p><input list="Pumb" name="pm"  oninput="this.className = ''">
+         <datalist id="Pumb">
+    <option value="مرحلة المشروع">
+    <option value="مرحلة تقديم المناقصات">
+      </datalist>
+    </p>
+عايز تنفذ الطلبية امتى
+    <label for="birthday"></label>
+    <p><input placeholder="mm/dd/yyyy" type="date" id="birthday" name="birthday" oninput="this.className = ''">
+    
+    </p>
+</div>
+
+<div class="tab">
+    طريقة الدفع؟ *
+  <p><input  oninput="this.className = ''"></p>
+    عايز فاتورة ضريبية؟
+  <p><input  oninput="this.className = ''"></p>
+    اكتب هنا أي تفاصيل أخرى خاصة بالطلب
+  <p><input  oninput="this.className = ''"></p>
+</div>
+
+<div class="tab">
+    اسم شركتك ايه؟ اكتب اسمك الثنائي لو مفيش شركة *
+  <p><input  oninput="this.className = ''">
+    
+    </p>
+اسمك ايه؟ *
+  <p><input  oninput="this.className = ''"></p>
+اسم العائلة؟ *
+  <p><input  oninput="this.className = ''"></p>
+رقم تليفونك... يفضل يكون به واتساب *
+  <p><input  oninput="this.className = ''"></p>
+ايميلك
+  <p><input  oninput="this.className = ''"></p>
+     <input type="checkbox" id="ٌrememberme" name="remme" value="me">
+  <label for="rememberme"> تذكرني على هذا الجهاز</label><br>
+  <input type="checkbox" id="rememberpro" name="rempro" value="pro">
+  <label for="rememberpro"> تذكر المشروع</label><br>
+</div>
+
+<div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">التالي</button>
+        </div>
+        <div style="float:left;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">السابق</button>
+        </div>
+</div>
+
+<!-- Circles which indicates the steps of the form: -->
+<div style="text-align:center;margin-top:40px;">
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+  <span class="step"></span>
+</div>
+
+</form>
+            <div class="last">
+        <div class="container">
+            <div class="p10-artc">
+                 
+                <h4>حقوق النشر 2020 - شركة الموقع ش. ذ. م. م. | جميع الحقوق محفوظة.</h4>
+            </div>
+            </div>
+        </div>
+<script src="js/secpage.js"></script>
+
+    </body>
+</html>
